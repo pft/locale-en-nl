@@ -16,7 +16,8 @@ comment_char %
 % Systems located in the Netherlands which are configured for the US English
 % International usually have LANG=en_US(.UTF-8) and LANGUAGE=en_US:en. Using
 % this file as en_NL /could/ trigger undesirable side effects. The following
-% quick and dirty instructions are the most failsafe to actrivate this locale:
+% quick and dirty instructions are the most failsafe way to activate this
+% locale:
 %   $ sudo su
 %   # cd /usr/share/i18n/locales
 %   # mv en_US .en_US.org
@@ -52,7 +53,7 @@ category  "en_US:2000";LC_TELEPHONE
 END LC_IDENTIFICATION
 
 LC_CTYPE
-%% use Dutch because of local language compatability (identical to English)
+%% use Dutch because of local language compatibility (identical to English)
 copy "i18n"
 
 translit_start
@@ -61,7 +62,7 @@ translit_end
 END LC_CTYPE
 
 LC_COLLATE
-%% use Dutch because of local language compatability (identical to English)
+%% use Dutch because of local language compatibility (identical to English)
 % Copy the template from ISO/IEC 14651
 copy "iso14651_t1"
 END LC_COLLATE
